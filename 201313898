@@ -1,0 +1,47 @@
+
+package reciclar;
+
+import javax.swing.JOptionPane;
+
+
+public class Reciclar {
+
+
+
+    public static void main(String[] args) {
+      String rango1;
+      String rango2;
+      int n1;
+      int n2;
+      int dato1;
+      int dato2;
+      
+      int r1;
+      int r2;
+      
+      
+        rango1= JOptionPane.showInputDialog("Ingrese el principio del rango (Dos digitos)");
+        r1=  Integer.parseInt(rango1);
+        rango2= JOptionPane.showInputDialog("Ingrese el final del rango (Dos digitos) ");
+        r2= Integer.parseInt(rango2);
+        
+        for (int i=r1; i<(r2+1);i++) {
+            //System.out.println(i);
+            n1= (i/10);
+            n2=(i%10);
+            //System.out.println("n1= "+n1 );
+            //System.out.println("n2= "+n2);
+            dato1= (n2*10)+n1;
+            //System.out.println("dato1= "+dato1 );
+           
+       
+         if ((dato1)<=r2){
+                
+                System.out.println("Caso# "+dato1);
+            }
+        }
+             System.out.println("------------*------------");   
+             
+    }
+    
+}
